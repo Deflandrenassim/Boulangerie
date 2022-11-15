@@ -6,7 +6,6 @@ import { useMoney } from '../context/MoneyContext';
 
 const FlourBatch = ({valueMoney, valueFloor}) => {
     const { money , updateMoney} = useMoney();
-    
     const { flour, Update } = useFlour();
     const handleMoney = () => {
         if( money <= 0 ){

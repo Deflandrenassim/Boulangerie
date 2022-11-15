@@ -4,7 +4,7 @@ import '../css/Cake.css'
 const Cake = ({src}) => {
     return (
         <div className='container_cake'>
-            <img className="cake" src={src} alt="petit croissant"/> 
+            <img className="cake" src={src} alt="cake"/> 
         </div>
     )
 }
