@@ -1,23 +1,26 @@
 import React from 'react';
 import BatchFlour from '../component/BatchFlour';
+import Picture from '../component/Picture';
+import '../css/BatchFlour.css'
 import { useFlour } from '../context/FlourContext';
 import { useMoney } from '../context/MoneyContext';
+import lotFarine from "../img/lotFarine.png";
 
-
-const FlourBatch = ({valueMoney, valueFloor}) => {
-    const { money , updateMoney} = useMoney();
-    const { flour, Update } = useFlour();
+const FlourBatch = ({ price, count, lot }) => {
+    const { money, updateMoney } = useMoney();
+    const { flour, update } = useFlour();
     const handleMoney = () => {
-        if( money <= 0 ){
-            alert("pas assez pour acheter un LOT :/")
-        } else {
-            updateMoney(money - valueMoney)
-            Update(flour + valueFloor)
-        }
+        update(flour + price)
+        updateMoney(money - count)
     }
+    if (money < price) return null;
+
 
     return (
-       <BatchFlour onClick={handleMoney}/> 
+        <div className='flourBatch'>
+            <Picture src={lotFarine}></Picture>
+            <BatchFlour onClick={handleMoney}> {lot}</BatchFlour>
+        </div>
     )
 }
 export default FlourBatch;

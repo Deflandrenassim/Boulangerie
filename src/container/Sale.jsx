@@ -1,23 +1,24 @@
 import React from 'react'
 import { useFlour } from '../context/FlourContext'
+import '../css/Sale.css';
 import Button from '../component/Button';
-import Cake from '../component/Cake';
+import Picture from '../component/Picture';
 import { useMoney } from '../context/MoneyContext';
 
-const Sale = ({img, value, price}) => {
-    const {flour, Update} = useFlour();
-    const {money, updateMoney } = useMoney()
+const Sale = ({ img, value, price, name }) => {
+    const { flour, update } = useFlour();
+    const { money, updateMoney } = useMoney()
     const handleBuy = () => {
-        Update(flour - value)
-        updateMoney(money + price )
-    } 
+        update(flour - value)
+        updateMoney(money + price)
+    }
 
     if (flour < value) return null;
-    
+
     return (
-        <div>
-            <Cake src={img}/>
-            <Button onClick={handleBuy}> Achat </Button>
+        <div className="sale">
+            <Picture src={img} />
+            <Button onClick={handleBuy}> {name} </Button>
         </div>
     )
 }

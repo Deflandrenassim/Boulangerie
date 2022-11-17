@@ -1,4 +1,9 @@
-.batch_flour{
+.batch_flour {
     height: 100px;
     width: 50px;
+}
+
+.flourBatch {
+    display: flex;
+    flex-direction: row;
 }
