@@ -4,10 +4,10 @@ import { useFlour } from "../context/FlourContext";
 import { useMoney } from "../context/MoneyContext";
 
 const ButtonContainer = () => {
-    const { flour, Update } = useFlour();
+    const { flour, update } = useFlour();
     const { money } = useMoney();
     const handleOnePoint = (value) => {
-        Update(flour + value);
+        update(flour + value);
     }
     return (
         <div>

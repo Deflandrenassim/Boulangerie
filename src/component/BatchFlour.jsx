@@ -5,12 +5,9 @@ import '../css/BatchFlour.css';
 const BatchFlour = ({ children, onClick, lot }) => {
     return (
         <div className="batch_flour">
-
-            <button onClick={onClick}> Achat {lot}</button>
+            <button onClick={onClick}> {lot} </button>
             {children}
         </div>
-
-
     )
 }
 export default BatchFlour; 
