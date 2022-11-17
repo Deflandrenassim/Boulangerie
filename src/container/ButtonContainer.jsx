@@ -8,7 +8,6 @@ const ButtonContainer = () => {
     const { money } = useMoney();
     const handleOnePoint = (value) => {
         Update(flour + value);
-        console.log(flour + value)
     }
     return (
         <div>
