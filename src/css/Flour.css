@@ -1,5 +1,16 @@
+.container {
+    padding-top: 50px;
+}
+
 .sale {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
+}
+
+.container_flour_batch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

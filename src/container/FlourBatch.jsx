@@ -4,7 +4,7 @@ import Picture from '../component/Picture';
 import '../css/BatchFlour.css'
 import { useFlour } from '../context/FlourContext';
 import { useMoney } from '../context/MoneyContext';
-import lotFarine from "../img/lotFarine.png";
+import lotFlour from "../img/LotFlour.png";
 
 const FlourBatch = ({ price, count, lot }) => {
     const { money, updateMoney } = useMoney();
@@ -18,8 +18,8 @@ const FlourBatch = ({ price, count, lot }) => {
 
     return (
         <div className='flourBatch'>
-            <Picture src={lotFarine}></Picture>
-            <BatchFlour onClick={handleMoney}> {lot}</BatchFlour>
+            <Picture src={lotFlour}></Picture>
+            <BatchFlour onClick={handleMoney}>{lot}</BatchFlour>
         </div>
     )
 }

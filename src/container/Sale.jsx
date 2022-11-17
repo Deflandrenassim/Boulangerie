@@ -1,6 +1,5 @@
 import React from 'react'
 import { useFlour } from '../context/FlourContext'
-import '../css/Sale.css';
 import Button from '../component/Button';
 import Picture from '../component/Picture';
 import { useMoney } from '../context/MoneyContext';

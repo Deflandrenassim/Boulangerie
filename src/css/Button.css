@@ -1,5 +1,6 @@
 .button {
     background-color: rgb(168, 102, 230);
+    color: black;
     height: 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -7,14 +8,19 @@
 
 .button:hover {
     background-color: rgba(154, 73, 230, 0.91);
+    color: black;
 }
 
 .button.counter {
-    cursor: pointer;
-    border-radius: 10px;
     background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
 }
 
 .button.counter:hover {
+    color: black;
     background-color: aqua;
 }
