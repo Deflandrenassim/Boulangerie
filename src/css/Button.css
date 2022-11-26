@@ -12,6 +12,9 @@
 }
 
 .button.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aquamarine;
     color: black;
     cursor: pointer;
@@ -23,4 +26,10 @@
 .button.counter:hover {
     color: black;
     background-color: aqua;
+}
+
+.button_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

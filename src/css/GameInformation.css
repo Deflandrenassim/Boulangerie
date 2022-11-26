@@ -1,0 +1,17 @@
+.game_information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.welcome {
+    padding: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.932);
+}
+
+.information {
+    color: rgb(8, 3, 34);
+}

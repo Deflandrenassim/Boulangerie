@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "../component/Button";
+import '../css/Button.css';
 import { useFlour } from "../context/FlourContext";
 import { useMoney } from "../context/MoneyContext";
 
@@ -10,7 +11,7 @@ const ButtonContainer = () => {
         update(flour + value);
     }
     return (
-        <div>
+        <div className="button_center">
             {money < 20 ? (
                 <Button counter="counter" onClick={() => handleOnePoint(1)}> + 1 </Button>
             )
